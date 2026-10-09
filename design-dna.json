@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "name": "Orblob Design DNA",
+    "description": "High-precision technical visual identity extracted from cobe.vercel.app with light/dark duality, electric cobalt ink accent, and WebGL dot-matrix globe graphics.",
+    "source_references": [
+      "https://cobe.vercel.app",
+      "cobe npm package"
+    ],
+    "created_at": "2026-10-09T14:43:00Z"
+  },
+  "design_system": {
+    "color": {
+      "palette_type": "analogous-monochrome-with-high-chroma-accent",
+      "primary": {
+        "hex": "#0045f6",
+        "role": "Signature electric cobalt ink brand accent, interactive elements, active tabs, CTA buttons"
+      },
+      "secondary": {
+        "hex": "#1a222b",
+        "role": "Deep carbon navy text and high-contrast structural borders"
+      },
+      "accent": {
+        "hex": "#0045f6",
+        "role": "Focal points, active indicators, globe highlight and arc illumination"
+      },
+      "neutral": {
+        "scale": {
+          "50": "#ffffff",
+          "100": "#f8fafc",
+          "200": "#f3f5f8",
+          "300": "#e0deda",
+          "400": "#cbd5e1",
+          "500": "#94a3b8",
+          "600": "#69737d",
+          "700": "#475569",
+          "800": "#1a222b",
+          "900": "#0f172a",
+          "950": "#090a0f"
+        },
+        "usage": "Elevated surfaces, crisp 1px borders, muted technical labels, and high-readability body text across light and dark modes"
+      },
+      "semantic": {
+        "success": "#00a67d",
+        "warning": "#f59e0b",
+        "error": "#ef4444",
+        "info": "#0045f6"
+      },
+      "surface": {
+        "background": "#ffffff",
+        "card": "#ffffff",
+        "elevated": "#f3f5f8"
+      },
+      "contrast_strategy": "High contrast technical editorial with deliberate stark monochrome and electric cobalt punch"
+    },
+    "typography": {
+      "type_scale": {
+        "display": {
+          "size": "48px",
+          "weight": "400",
+          "line_height": "1.1",
+          "tracking": "-0.02em"
+        },
+        "heading_1": {
+          "size": "32px",
+          "weight": "500",
+          "line_height": "1.2",
+          "tracking": "-0.015em"
+        },
+        "heading_2": {
+          "size": "24px",
+          "weight": "500",
+          "line_height": "1.3",
+          "tracking": "-0.01em"
+        },
+        "heading_3": {
+          "size": "18px",
+          "weight": "500",
+          "line_height": "1.4",
+          "tracking": "0em"
+        },
+        "body": {
+          "size": "14px",
+          "weight": "400",
+          "line_height": "1.6",
+          "tracking": "0.01em"
+        },
+        "body_small": {
+          "size": "12px",
+          "weight": "400",
+          "line_height": "1.5",
+          "tracking": "0.015em"
+        },
+        "caption": {
+          "size": "11px",
+          "weight": "500",
+          "line_height": "1.4",
+          "tracking": "0.05em"
+        },
+        "overline": {
+          "size": "10px",
+          "weight": "600",
+          "line_height": "1.2",
+          "tracking": "0.12em"
+        }
+      },
+      "font_families": {
+        "heading": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "body": "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+        "mono": "'Departure Mono', 'Geist Mono', 'JetBrains Mono', 'SF Mono', monospace"
+      },
+      "font_style_notes": "Precision engineering micro-typography with tracked uppercase monospace tags and crisp geometric body sans"
+    },
+    "spacing": {
+      "base_unit": "4px",
+      "scale": [
+        "0px",
+        "4px",
+        "8px",
+        "12px",
+        "16px",
+        "20px",
+        "24px",
+        "32px",
+        "40px",
+        "48px",
+        "64px"
+      ],
+      "content_density": "compact",
+      "section_rhythm": "Dense 1px bordered grid panels with structured 12px/16px padding"
+    },
+    "layout": {
+      "grid_system": "12-column with 1px border dividers",
+      "max_content_width": "1440px",
+      "columns": "12",
+      "gutter": "0px",
+      "breakpoints": {
+        "sm": "640px",
+        "md": "768px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1536px"
+      },
+      "alignment_tendency": "strict grid"
+    },
+    "shape": {
+      "border_radius": {
+        "small": "4px",
+        "medium": "6px",
+        "large": "8px",
+        "pill": "9999px"
+      },
+      "border_usage": "crisp 1px / 1.5px borders defining panels and controls",
+      "divider_style": "solid 1px var(--border)"
+    },
+    "elevation": {
+      "shadow_style": "none",
+      "levels": {
+        "low": "none",
+        "medium": "0 1px 3px rgba(0,0,0,0.05)",
+        "high": "0 4px 12px rgba(0,0,0,0.08)"
+      },
+      "depth_cues": "layering, sharp borders, and WebGL depth instead of blur/heavy shadows"
+    },
+    "iconography": {
+      "style": "monoline technical",
+      "stroke_weight": "1.5px",
+      "size_scale": {
+        "sm": "14px",
+        "md": "16px",
+        "lg": "20px"
+      },
+      "preferred_set": "lucide-react"
+    },
+    "motion": {
+      "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+      "duration_scale": {
+        "micro": "150ms",
+        "normal": "250ms",
+        "macro": "450ms"
+      },
+      "entrance_pattern": "fade-in with subtle 2px transform",
+      "exit_pattern": "fade-out",
+      "philosophy": "Snappy, restrained, utility-focused, no frivolous decorative delay"
+    },
+    "components": {
+      "button_style": "Sharp 6px radius, solid ink or bordered ghost, uppercase monospace tracking",
+      "input_style": "1px border, compact 32px height, monospace values",
+      "card_style": "Bordered pane with 0px or 6px radius, background surface",
+      "navigation_pattern": "Top bar with segmented tool modes (Design, Code, Preview, Export)",
+      "modal_style": "Crisp bordered dialog with subtle backdrop",
+      "list_style": "1px bordered cell rows with hover highlight",
+      "component_notes": "Figma/Framer level inspector density with segmented sliders and numeric steppers"
+    }
+  },
+  "design_style": {
+    "aesthetic": {
+      "mood": [
+        "technical",
+        "minimalist",
+        "calm",
+        "premium",
+        "scientific"
+      ],
+      "visual_metaphor": "Precision laboratory instrument and satellite navigation workstation",
+      "era_influence": "Contemporary Swiss modernist engineering tool",
+      "genre": "Developer Graphics Tool / Design Studio",
+      "personality_traits": [
+        "meticulous",
+        "accurate",
+        "authoritative",
+        "uncluttered"
+      ],
+      "adjectives": [
+        "crisp",
+        "understated",
+        "sharp",
+        "performant",
+        "intentional"
+      ]
+    },
+    "visual_language": {
+      "complexity": "moderate",
+      "ornamentation": "none",
+      "whitespace_usage": "efficient functional padding with prominent canvas focus",
+      "visual_weight_distribution": "Centralized live viewport surrounded by dense utility panels",
+      "focal_strategy": "Single hero WebGL globe canvas with anchored real-time HUD overlays",
+      "contrast_level": "high",
+      "texture_usage": "Procedural WebGL point-matrix sampling on dark/light background"
+    },
+    "composition": {
+      "hierarchy_method": "Typographic scale and spatial grid partitioning",
+      "balance_type": "symmetric-viewport with asymmetric inspector docking",
+      "flow_direction": "Top-down workflow with left-to-right inspection pipeline",
+      "grouping_strategy": "Bordered panel cards with segmented collapsible sections",
+      "negative_space_role": "Breathing room for 3D globe rotation and interaction"
+    },
+    "imagery": {
+      "photo_treatment": "none",
+      "illustration_style": "procedural 3D math and vector ribbons",
+      "graphic_elements": "orbital rings, crosshairs, latitude/longitude grids, beacon points",
+      "pattern_usage": "Fibonacci point distribution and subtle technical grid lines",
+      "image_shape": "geometric"
+    },
+    "interaction_feel": {
+      "feedback_style": "Instantaneous WebGL state reflection without React rerender lag",
+      "hover_behavior": "Subtle background fill and border color shift",
+      "transition_personality": "Snappy and mechanical",
+      "loading_style": "Minimal spinner or pulse indicator",
+      "microinteraction_density": "high on canvas and controls"
+    },
+    "brand_voice_in_ui": {
+      "tone": "Direct, technical, and confident",
+      "formality": "professional",
+      "cta_style": "direct imperative (Export Code, Add Marker, Save Cloud)",
+      "empty_state_approach": "Structured instructional prompt with one-click preset action",
+      "error_tone": "Precise diagnostic message with recovery button"
+    }
+  },
+  "visual_effects": {
+    "overview": {
+      "effect_intensity": "heavy-immersive",
+      "performance_tier": "heavy",
+      "fallback_strategy": "graceful WebGL context loss recovery, WebGL1/Canvas fallback, reduced-motion static render",
+      "primary_technology": "WebGL2 with custom GLSL raymarching shaders"
+    },
+    "background_effects": {
+      "type": "subtle-technical-glow",
+      "description": "Atmospheric horizon rim lighting computed per-pixel in fragment shader",
+      "technology": "GLSL Fragment Shader",
+      "params": {
+        "color_palette": [
+          "#0045f6",
+          "#ffffff",
+          "#000000"
+        ],
+        "speed": "realtime",
+        "density": "1.0",
+        "opacity": "0.9",
+        "blend_mode": "additive"
+      }
+    },
+    "particle_systems": {
+      "enabled": true,
+      "type": "floating-dots",
+      "description": "Fibonacci spiral point sampling on the sphere surface mapped to land/water mask",
+      "technology": "WebGL2 procedural GLSL shader",
+      "params": {
+        "count": "1000-50000 dots",
+        "shape": "smooth disc",
+        "size_range": "1px-3px",
+        "movement_pattern": "rigid spherical rotation",
+        "color_behavior": "diffuse lit with latitude-based shading",
+        "interaction": "direct inertial mouse/touch drag",
+        "spawn_area": "unit sphere surface"
+      }
+    },
+    "3d_elements": {
+      "enabled": true,
+      "type": "hero-model",
+      "description": "Interactive 3D WebGL2 sphere with custom lighting, camera pitch/yaw, instanced markers, and bezier arcs",
+      "technology": "WebGL2 native",
+      "params": {
+        "renderer": "Custom WebGL2 engine",
+        "lighting": "Diffuse directional + ambient + atmospheric rim glow",
+        "camera": "Orthographic/Perspective hybrid with phi/theta spherical rotation",
+        "materials": "Custom GLSL procedural dot shader + instanced billboard shaders",
+        "geometry": "Full-screen raymarching quad + instanced triangle ribbons",
+        "post_processing": [
+          "atmospheric bloom",
+          "alpha blending"
+        ],
+        "interaction_model": "Trackball-style inertia drag, pinch zoom, click ray-casting"
+      }
+    },
+    "shader_effects": {
+      "enabled": true,
+      "type": "custom-GLSL",
+      "description": "Raymarched Fibonacci sphere, instanced marker discs, and quadratic Bezier ribbon strips",
+      "technology": "GLSL ES 3.0 / WebGL2",
+      "params": {
+        "uniforms": [
+          "u_resolution",
+          "u_rotation",
+          "u_samples",
+          "u_colors",
+          "u_diffuse",
+          "u_dark"
+        ],
+        "vertex_manipulation": "Ribbon normal extrusion along quadratic Bezier curve",
+        "fragment_output": "Procedural antialiased circle discard with rim glow",
+        "noise_type": "procedural Fibonacci spiral",
+        "distortion": "spherical perspective distortion"
+      }
+    },
+    "scroll_effects": {
+      "parallax": {
+        "enabled": false,
+        "layers": "1",
+        "depth_range": "0",
+        "speed_curve": "linear"
+      },
+      "scroll_triggered_animations": {
+        "enabled": true,
+        "trigger_points": "IntersectionObserver",
+        "animation_type": "fade-up",
+        "scrub_behavior": "none"
+      },
+      "scroll_morphing": {
+        "enabled": false,
+        "description": "none"
+      }
+    },
+    "text_effects": {
+      "type": "orbit-ring-svg",
+      "description": "SVG textPath rotating smoothly along an inclined 3D orbit ring around the globe",
+      "technology": "SVG + CSS keyframe animation",
+      "params": {
+        "split_strategy": "by-char",
+        "animation_per_unit": "continuous 30s orbit spin",
+        "stagger": "0s",
+        "effect_style": "orbital text halo"
+      }
+    },
+    "cursor_effects": {
+      "enabled": true,
+      "type": "custom-cursor",
+      "description": "Grab / grabbing cursor during 3D globe manipulation",
+      "params": {
+        "shape": "hand/crosshair",
+        "size": "24px",
+        "blend_mode": "normal",
+        "trail": "none",
+        "interaction_zone": "globe canvas"
+      }
+    },
+    "image_effects": {
+      "type": "none",
+      "description": "none",
+      "technology": "none",
+      "params": {
+        "filter_pipeline": "none",
+        "hover_transform": "none",
+        "reveal_animation": "none",
+        "distortion_type": "none"
+      }
+    },
+    "glassmorphism_neumorphism": {
+      "enabled": false,
+      "style": "none",
+      "params": {
+        "blur_radius": "0",
+        "transparency": "1",
+        "border_treatment": "1px crisp border",
+        "shadow_type": "none",
+        "light_source_angle": "0"
+      }
+    },
+    "canvas_drawings": {
+      "enabled": true,
+      "type": "data-visualization",
+      "description": "High-frequency WebGL render loop for continuous 60fps globe rotation and marker pulsing",
+      "technology": "WebGL2 requestAnimationFrame loop",
+      "params": {
+        "draw_method": "drawArrays + drawArraysInstanced",
+        "animation_loop": "requestAnimationFrame with delta-time smoothing",
+        "color_scheme": "dynamic theme tokens",
+        "responsiveness": "devicePixelRatio 1x/2x auto-scaling",
+        "interaction": "inertial friction drag"
+      }
+    },
+    "svg_animations": {
+      "enabled": true,
+      "type": "decorative-loop",
+      "description": "Rotating SVG text orbit rings around the globe",
+      "technology": "SVG textPath with CSS rotateX and rotate transform",
+      "params": {
+        "animation_method": "CSS keyframes",
+        "path_morphing": "none",
+        "stroke_animation": "none",
+        "filter_effects": "sticker-outline feMorphology"
+      }
+    },
+    "composite_notes": "The system combines a 6-vertex full-screen quad raymarched Fibonacci sphere, instanced GPU billboard quads for markers, instanced 66-vertex Bezier ribbon strips for arcs, and projected 2D coordinates driving CSS anchor variables (--cobe-*) or DOM overlays for labels. Studio controls update typed Zustand store, which directly syncs to the WebGL uniforms without triggering React virtual DOM thrashing."
+  }
+}

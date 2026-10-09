@@ -1,0 +1,39 @@
+{
+  "name": "@orblob/vue",
+  "version": "1.0.0",
+  "description": "Vue 3 integration and composables for Orblob WebGL globe",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --external vue",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --external vue --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "@orblob/config": "workspace:*",
+    "@orblob/core": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vue": "^3.5.13"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/v0.14.0/schemas/plan.schema.json",
+  "projectId": "4718698d-5490-4e7e-a003-c1724165bef7",
+  "type": "frontend",
+  "name": "Add and Configure Custom Globe Marker",
+  "planSteps": [
+    {
+      "type": "action",
+      "description": "Click the Add Marker button in the Layers panel on the left"
+    },
+    {
+      "type": "assertion",
+      "description": "Verify a new marker is appended to the layers list and selected in the inspector with latitude and longitude inputs"
+    }
+  ]
+}

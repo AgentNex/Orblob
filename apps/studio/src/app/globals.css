@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-elevated: #f3f5f8;
+  --surface-sunken: #eef1f5;
+  --text: #1a222b;
+  --text-dim: #69737d;
+  --ink: #0045f6;
+  --ink-dim: #e5ebfa;
+  --ink-hover: #0038c8;
+  --border: #e0deda;
+  --border-strong: #1a222b;
+
+  --sh-keyword: #0045f6;
+  --sh-string: #00a67d;
+  --sh-class: #2d5e9d;
+  --sh-identifier: #1a222b;
+  --sh-comment: #94a3b8;
+  --sh-sign: #8996a3;
+}
+
+.dark {
+  --bg: #090a0f;
+  --surface: #11141c;
+  --surface-elevated: #171c26;
+  --surface-sunken: #0c0e14;
+  --text: #f1f5f9;
+  --text-dim: #8892b0;
+  --ink: #3b82f6;
+  --ink-dim: #152238;
+  --ink-hover: #60a5fa;
+  --border: #232a36;
+  --border-strong: #3b82f6;
+
+  --sh-keyword: #3b82f6;
+  --sh-string: #10b981;
+  --sh-class: #60a5fa;
+  --sh-identifier: #f1f5f9;
+  --sh-comment: #64748b;
+  --sh-sign: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+/* Selection */
+::selection {
+  background: var(--ink-dim);
+  color: var(--ink);
+}
+
+/* Orbit Ring animation */
+@keyframes orbit-spin {
+  0% {
+    transform: rotateX(62deg) rotate(0deg);
+  }
+  100% {
+    transform: rotateX(62deg) rotate(-360deg);
+  }
+}
+
+.orbit-svg {
+  animation: 32s linear infinite orbit-spin;
+  transform: rotateX(62deg);
+}
+
+/* Marker Tooltips & Anchors */
+.marker-pill {
+  position: absolute;
+  transform: translate(-50%, -120%);
+  background: var(--ink);
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 10px;
+  font-family: 'Departure Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 2px 8px rgba(0, 69, 246, 0.3);
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 10;
+}
+
+.marker-pill::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--ink);
+}
+
+.marker-card {
+  position: absolute;
+  transform: translate(-50%, -125%);
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+.marker-card-subtitle {
+  font-size: 9px;
+  color: var(--text-dim);
+  font-family: 'Departure Mono', monospace;
+}

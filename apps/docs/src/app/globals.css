@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Design DNA Light Tokens */
+  --surface: #ffffff;
+  --surface-elevated: #f3f5f8;
+  --surface-sunken: #eaedf1;
+  --border: #e2e6eb;
+  --border-strong: #c8cfd9;
+  --text: #1a222b;
+  --text-dim: #69737d;
+  --text-muted: #959fa9;
+  --ink: #0045f6;
+  --ink-dim: #0045f6;
+  --ink-hover: #0036c2;
+  --accent: #0045f6;
+  --accent-hover: #0036c2;
+  --accent-glow: rgba(0, 69, 246, 0.12);
+}
+
+.dark {
+  /* Design DNA Dark Tokens */
+  --surface: #090a0f;
+  --surface-elevated: #171c26;
+  --surface-sunken: #0d1017;
+  --border: #262c38;
+  --border-strong: #3b4354;
+  --text: #f1f5f9;
+  --text-dim: #94a3b8;
+  --text-muted: #64748b;
+  --ink: #3b82f6;
+  --ink-dim: #60a5fa;
+  --ink-hover: #2563eb;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --accent-glow: rgba(59, 130, 246, 0.18);
+}
+
+body {
+  background-color: var(--surface);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+}
+
+pre, code {
+  font-family: 'JetBrains Mono', monospace;
+}

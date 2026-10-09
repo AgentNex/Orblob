@@ -1,0 +1,36 @@
+{
+  "name": "@orblob/codegen",
+  "version": "1.0.0",
+  "description": "Multi-framework code generation and export engine for Orblob",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@orblob/config": "workspace:*",
+    "jszip": "^3.10.1"
+  },
+  "devDependencies": {
+    "@types/jszip": "^3.4.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}
